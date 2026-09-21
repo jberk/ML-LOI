@@ -4,7 +4,12 @@ Analytic code for:
 
 > Berk J, Wolfer-Jenkins C, Allen B, Paul A, Martin M, James M-E, Akiyama MJ,
 > Bovell-Ammon BJ. *Evaluating the Application of Machine Learning to Predict
-> Length of Incarceration and Guide HCV Treatment in a Jail Setting.* (under review)
+> Length of Incarceration and Guide HCV Treatment in a Jail Setting.* (submitted)
+
+This repository accompanies the manuscript submission. It contains the
+analytic code, a data dictionary for both datasets, and the aggregate results
+reported in the paper. It does not, and cannot, contain individual-level
+data — see [Data availability](#data-availability) below.
 
 ## What this study did
 
@@ -55,8 +60,8 @@ data/      empty by design - see data/README.md
 Requires Python 3.11.6.
 
 ```bash
-git clone https://github.com/<username>/<repo>.git
-cd <repo>
+git clone https://github.com/jberk/ML-LOI.git
+cd ML-LOI
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
