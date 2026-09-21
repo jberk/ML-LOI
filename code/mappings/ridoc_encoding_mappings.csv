@@ -1,0 +1,50 @@
+Category,Encoded_Label,Column
+B&E,0,Most_Serious_Offense_Type
+Drug,1,Most_Serious_Offense_Type
+Nonviolent,2,Most_Serious_Offense_Type
+Pending,3,Most_Serious_Offense_Type
+Sex,4,Most_Serious_Offense_Type
+Violent,5,Most_Serious_Offense_Type
+Civil Purge,0,Admission_Type
+Contempt of Court,1,Admission_Type
+Failure to Appear,2,Admission_Type
+Failure to Pay Costs/Fines,3,Admission_Type
+Fugitive from Justice,4,Admission_Type
+Hold for Immigration,5,Admission_Type
+Hold for Other State,6,Admission_Type
+Military Hold,7,Admission_Type
+New Commitment,8,Admission_Type
+US Hold,9,Admission_Type
+bail violator,10,Admission_Type
+probation violator,11,Admission_Type
+return from IMH,12,Admission_Type
+return from escape,13,Admission_Type
+return from out of state,14,Admission_Type
+fall,0,Season
+spring,1,Season
+summer,2,Season
+winter,3,Season
+Amer Indian,0,Race
+Asian,1,Race
+Black,2,Race
+Hispanic,3,Race
+Other,4,Race
+Unknown,5,Race
+White,6,Race
+CAPE VERDE,0,Nativity
+DOMINICAN REPUBLIC,1,Nativity
+GUATAMALA,2,Nativity
+Other,3,Nativity
+PUERTO RICO,4,Nativity
+UNITED STATES,5,Nativity
+divorced,0,Marital_Status
+married,1,Marital_Status
+remarried,2,Marital_Status
+separated,3,Marital_Status
+single,4,Marital_Status
+widowed,5,Marital_Status
+,6,Marital_Status
+Female,0,Sex
+Male,1,Sex
+Bail,0,No_Bail
+No bail,1,No_Bail

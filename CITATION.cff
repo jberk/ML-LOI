@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: >-
+  Analytic code for "Evaluating the Application of Machine Learning to Predict
+  Length of Incarceration and Guide HCV Treatment in a Jail Setting"
+message: "If you use this code, please cite the accompanying paper."
+type: software
+authors:
+  - given-names: Justin
+    family-names: Berk
+    email: justin_berk@brown.edu
+    affiliation: Warren Alpert Medical School of Brown University
+    orcid: "https://orcid.org/0000-0002-2865-7464"
+  - given-names: Claire
+    family-names: Wolfer-Jenkins
+    affiliation: Brown University Health
+  - given-names: Bennett
+    family-names: Allen
+    affiliation: NYU Grossman School of Medicine
+  - given-names: Alice
+    family-names: Paul
+    affiliation: Brown University
+  - given-names: Megan
+    family-names: Martin
+    affiliation: Brown University
+  - given-names: Michael-Evans
+    family-names: James
+    affiliation: Brown University
+  - given-names: Matthew J
+    family-names: Akiyama
+    affiliation: Albert Einstein College of Medicine
+  - given-names: Benjamin J
+    family-names: Bovell-Ammon
+    affiliation: UMass Chan Medical School-Baystate
+license: MIT
+repository-code: "https://github.com/<username>/<repo>"

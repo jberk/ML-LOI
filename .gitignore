@@ -1,0 +1,65 @@
+# ============================================================
+# PROTECTIVE GITIGNORE
+# Blocks individual-level data from ever being committed.
+# Do not loosen these rules without checking the RIDOC data
+# use agreement and the JDI data use agreement first.
+# ============================================================
+
+# Block every common data file extension, anywhere in the repo
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.sav
+*.dta
+*.sas7bdat
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.rds
+*.RData
+*.db
+*.sqlite
+*.json
+*.zip
+*.gz
+*.7z
+
+# Block the data folder entirely (except its README)
+data/*
+!data/README.md
+
+# ---- Explicit allow-list -----------------------------------
+# Aggregate, publication-ready outputs only. Anything added
+# here has been reviewed for small-cell disclosure risk.
+!results/*.csv
+!results/supplemental/*.csv
+!docs/*.csv
+!code/mappings/*.csv
+!environment.yml
+!requirements.txt
+
+# Notebooks: strip outputs before committing (outputs can
+# contain printed rows of real data)
+*.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Credentials
+.env
+*.key
+*.pem
+secrets*

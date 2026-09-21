@@ -1,0 +1,16 @@
+variable,label,type,source,derivation,notes
+person_id,De-identified person identifier,id,JDI,Provided by JDI,Used to prevent person-level leakage across splits
+booking_date,Date of booking,date,JDI,Provided by JDI,
+release_date,Date of release,date,JDI,Provided by JDI,
+loi_days,Length of incarceration in days,numeric,Derived,release_date minus booking_date,
+long_stay_56,Stay of at least 56 days,binary,Derived,loi_days >= 56,Primary classification outcome
+long_stay_28,Stay of at least 28 days,binary,Derived,loi_days >= 28,Secondary classification outcome
+age,Age at booking in years,numeric,JDI,Provided by JDI,One of six variables selected for high completeness across states
+sex_gender,Sex and gender,categorical,JDI,Provided by JDI,One of six variables selected for high completeness across states
+race_ethnicity,Race and ethnicity,categorical,JDI,Provided by JDI,One of six variables selected for high completeness across states
+bond_amount,Bond amount,numeric,JDI,Provided by JDI,Identified as a top predictive feature
+top_charge,Top charge category,categorical,JDI,Provided by JDI,"Identified as a top predictive feature; CT, MA and PA were dropped because this field was unavailable"
+n_bookings,Number of bookings (charges),numeric,JDI,Provided by JDI,One of six variables selected for high completeness across states
+state,State of the admitting facility,categorical,JDI,Provided by JDI,42 states retained; identified as a top predictive feature
+county_fips,FIPS code of the county of the jail,id,JDI,Provided by JDI,Used only to link the SVI; not used as a model feature
+svi,CDC Social Vulnerability Index,numeric,CDC,Linked to county_fips,Public data

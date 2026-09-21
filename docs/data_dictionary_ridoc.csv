@@ -1,0 +1,23 @@
+variable,label,type,source,derivation,notes
+person_id,De-identified person identifier,id,RIDOC,Provided by RIDOC,Used to group events and to prevent person-level leakage across train/test splits
+admission_date,Date of admission to pretrial detention,date,RIDOC,Provided by RIDOC,Used with charge data to collapse charges into a single incarceration event
+release_date,Date of release,date,RIDOC,Provided by RIDOC,
+loi_days,Length of incarceration in days,numeric,Derived,release_date minus admission_date,Primary outcome variable in continuous form
+long_stay_56,Stay of at least 56 days,binary,Derived,loi_days >= 56,Primary classification outcome; 56 days = typical HCV treatment course
+long_stay_28,Stay of at least 28 days,binary,Derived,loi_days >= 28,Secondary classification outcome
+age,Age at admission in years,numeric,RIDOC,Provided by RIDOC,
+sex,Sex assigned at birth,categorical,RIDOC,Provided by RIDOC,
+race_ethnicity,Combined race and ethnicity,categorical,RIDOC,Provided by RIDOC,"Mutually exclusive RIDOC categories: American Indian, Asian, Black, Hispanic, White, Other"
+nativity,Country of birth,categorical,RIDOC,Top 5 responses retained; all others coded Other,"Retained: United States, Puerto Rico, Dominican Republic, Cape Verde, Guatemala"
+marital_status,Marital status,categorical,RIDOC,Provided by RIDOC,
+num_children,Number of children,numeric,RIDOC,Top-coded at 5,Top-coded due to rightward skew
+education,Highest education level,categorical,RIDOC,Provided by RIDOC,
+zip_median_income,Median household income in ZIP code of residence,numeric,ACS 2019,Residential ZIP from RIDOC linked to ACS 2019 ZCTA median household income,Public data; ZIP itself is not retained in the analytic file
+admission_type,Type of admission,categorical,RIDOC,Provided by RIDOC,Identified as a top predictive feature
+bail_amount,Bail or bond amount to be paid,numeric,RIDOC,Provided by RIDOC,"Sensitivity analysis encoded 'no bail offered' as $1,000,000 vs $0 (Supplemental Appendix H)"
+bail_offered,Bail or bond was offered,binary,Derived,Non-missing bail_amount,
+n_charges,Number of charges in the incarceration event,numeric,Derived,Count of charge rows collapsed into the event,
+charge_<type>_count,Count of charges of a given type in the event,numeric,Derived,Counted from collapsed charge rows,"Breaking-and-entering and drug offense counts were top predictive features; replicate one row per charge type"
+prior_events,Number of prior incarceration events,numeric,Derived,Count of earlier events for the same person_id,
+prior_violent_events,Number of prior events including a violent charge,numeric,Derived,Count of earlier events with any violent charge,Capped at 3 points in the criminal history score
+criminal_history_score,Criminal history score,numeric,Derived,"Adapted from USSC 2025 Guidelines Manual Sec. 4A1.1 as used in the JSIN platform","Prior incarceration lengths excluded (pretrial-only data); 1 point added if the current event includes probation violation, bail violation, failure to pay costs/fines, fugitive from justice, return from escape, or contempt of court. Sensitivity analysis only (Supplemental Appendix G)"

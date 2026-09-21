@@ -1,0 +1,65 @@
+,Category,Encoded_Label,Column
+0,Female,0,Sex_Gender_Standardized
+1,Male,1,Sex_Gender_Standardized
+2,Nonbinary,2,Sex_Gender_Standardized
+3,Trans,3,Sex_Gender_Standardized
+4,Unknown Gender,4,Sex_Gender_Standardized
+5,AAPI,0,Race_Ethnicity_Standardized
+6,Black,1,Race_Ethnicity_Standardized
+7,Indigenous,2,Race_Ethnicity_Standardized
+8,Other POC,3,Race_Ethnicity_Standardized
+9,Unknown Race,4,Race_Ethnicity_Standardized
+10,White,5,Race_Ethnicity_Standardized
+11,DUI Offense,0,Top_Charge
+12,Drug,1,Top_Charge
+13,Property,2,Top_Charge
+14,Public Order,3,Top_Charge
+15,Violent,4,Top_Charge
+16,AL,0,State
+17,AR,1,State
+18,AZ,2,State
+19,CA,3,State
+20,CO,4,State
+21,FL,5,State
+22,GA,6,State
+23,IA,7,State
+24,ID,8,State
+25,IL,9,State
+26,IN,10,State
+27,KS,11,State
+28,KY,12,State
+29,LA,13,State
+30,MD,14,State
+31,ME,15,State
+32,MI,16,State
+33,MN,17,State
+34,MO,18,State
+35,MS,19,State
+36,MT,20,State
+37,NC,21,State
+38,ND,22,State
+39,NE,23,State
+40,NH,24,State
+41,NJ,25,State
+42,NM,26,State
+43,NV,27,State
+44,NY,28,State
+45,OH,29,State
+46,OK,30,State
+47,OR,31,State
+48,SC,32,State
+49,SD,33,State
+50,TN,34,State
+51,TX,35,State
+52,UT,36,State
+53,VA,37,State
+54,WA,38,State
+55,WI,39,State
+56,WV,40,State
+57,WY,41,State
+58,1.0,0,Num_Bookings_Grouped
+59,2.0,1,Num_Bookings_Grouped
+60,3.0,2,Num_Bookings_Grouped
+61,4.0,3,Num_Bookings_Grouped
+62,5.0,4,Num_Bookings_Grouped
+63,,5,Num_Bookings_Grouped

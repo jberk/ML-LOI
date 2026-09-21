@@ -1,0 +1,12 @@
+# Python 3.11.6
+# Pin these to the versions actually used in the analysis before publishing.
+# From a working environment, run:  pip freeze > requirements.txt
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+catboost
+lightgbm
+scipy
+matplotlib
+seaborn
